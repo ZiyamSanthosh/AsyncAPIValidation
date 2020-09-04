@@ -104,6 +104,9 @@ public class Validation{
     public String convertURLtoYAML(String fileURL) throws IOException {
         URL url = new URL(fileURL);
         File file = new File("new.yaml");
+        if (file.exists()){
+            file.delete();
+        }
         if (file.createNewFile()){
             FileUtils.copyURLToFile(url, file);
         }
