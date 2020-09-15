@@ -1,12 +1,15 @@
-asyncapi: 2.0.0
-info:
-  title: WebSockets echo server
-  version: 1.0.0
 
-servers:
+info:
+  titl: WebSockets echo server
+  version: abc
+
+server:
   localhost:
     url: localhost
     protocol: ws
+
+ziyam:
+  vanakkam
 
 channels:
   /echo:
